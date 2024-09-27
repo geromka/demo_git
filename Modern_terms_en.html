@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Musical Terms Dictionary</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('Modern_terms')">ua</button>
+        <form>
+            <label for="pageSelect">Go to:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Select a page--</option>
+                <option value="Home_en.html">Home Page</option>
+                <option value="Basic_terms_en.html">Basic Terms</option>
+                <option value="Advanced_terms_en.html">Advanced Terms</option>
+                <option value="Modern_terms_en.html">Modern Terms</option>
+                <option value="music_genres_en.html">Music Genres</option>
+                <option value="Mandatory_stuff_en.html">Mandatory Requirements</option>
+            </select>
+        </form>
+        <h1>Modern Musical Terms</h1>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><span>Auto-Tune</span> — a technology for automatic pitch correction, used to fix inaccuracies in vocals or to create an artificial voice effect.</li>
+                <li><span>Sampling</span> — the process of using parts of existing music recordings in a new context or work. This can be a snippet of melody, rhythm, or even voice.</li>
+                <li><span>DAW (Digital Audio Workstation)</span> — software for creating, editing, and recording music. Examples: Ableton Live, FL Studio, Logic Pro.</li>
+                <li><span>Glitch</span> — a style of music based on the use of digital errors and noise as a musical element, or the effect of digital errors in sound.</li>
+                <li><span>Mastering</span> — the final stage of music production, where audio material is prepared for release, optimizing its loudness, frequency balance, and aligning tracks in an album.</li>
+                <li><span>Sidechain</span> — a technique in sound production where one audio signal is used to control parameters of another (most often compression), for example, in dance music to enhance the beats.</li>
+                <li><span>Beatmaking</span> — the process of creating the instrumental base of music, usually in hip-hop and electronic music, focusing on rhythmic beats and samples.</li>
+                <li><span>VST (Virtual Studio Technology)</span> — a technology for creating software instruments and effects that integrate into DAWs for sound creation and processing.</li>
+                <li><span>Sound Design</span> — the process of creating new sounds or altering existing ones using electronic means, often used in film, games, and electronic music.</li>
+                <li><span>Loop</span> — a repeating musical fragment that plays cyclically. Loops can be rhythmic, melodic, or sound-based.</li>
+                <li><span>Drop</span> — a part of a composition, often in electronic dance music, where there is a sudden change in rhythm or tempo after tension in the musical structure, usually eliciting an emotional peak in the listener.</li>
+                <li><span>Breakdown</span> — a part of a composition, often in EDM, where the intensity of the music decreases before returning to the main rhythm or "drop."</li>
+                <li><span>Click Track</span> — a metronomic sound used during recording or live performance to maintain tempo.</li>
+                <li><span>Stems</span> — separate audio files (e.g., drums, vocals, synthesizers) that make up a complete musical composition. They are used for remixes or re-recording.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Basic Terms</button></a>
+            <a href="Advanced_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Advanced Terms</button></a>
+            <a href="Modern_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Modern Terms</button></a>
+            <a href="music_genres_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Music Genres</button></a>
+            <a href="Mandatory_stuff_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Mandatory Requirements</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>

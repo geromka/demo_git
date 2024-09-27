@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Musical Terms Dictionary</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('music_genres')">ua</button>
+        <form>
+            <label for="pageSelect">Go to:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Select a page--</option>
+                <option value="Home_en.html">Home Page</option>
+                <option value="Basic_terms_en.html">Basic Terms</option>
+                <option value="Advanced_terms_en.html">Advanced Terms</option>
+                <option value="Modern_terms_en.html">Modern Terms</option>
+                <option value="music_genres_en.html">Music Genres</option>
+                <option value="Mandatory_stuff_en.html">Mandatory Requirements</option>
+            </select>
+        </form>
+        <h1>Global Music Genres</h1>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><span>Pop</span> — A widely popular genre characterized by simple melodies and accessible lyrics. Pop music often targets a broad audience and achieves commercial success.</li>
+                <li><span>Rock</span> — A genre that emerged in the 1950s, marked by the use of electric guitars, powerful drums, and vocals. It includes various sub-genres like classic rock, alternative rock, and punk rock.</li>
+                <li><span>Hip-Hop</span> — A genre that combines rhythmic spoken vocals (rap) with rhythm and beat. It often addresses social, political, and cultural themes.</li>
+                <li><span>Electronic</span> — Music created using electronic instruments and computer programs. It includes sub-genres like techno, house, and drum and bass, and is often used in clubs and festivals.</li>
+                <li><span>Jazz</span> — A style characterized by improvisation, complex rhythmic structures, and melodies. It usually involves various instruments like saxophone, trumpet, and piano.</li>    
+                <li><span>Blues</span> — A genre that originated in African American communities, characterized by melancholic lyrics and specific chord progressions. It often features guitar and vocals.</li>
+                <li><span>Reggae</span> — A musical style that emerged in Jamaica, marked by rhythmic accents on the off-beat. It often contains lyrics related to social and political issues.</li>
+                <li><span>Metal</span> — A powerful genre that includes aggressive guitar riffs, fast tempos, and heavy bass. It has many sub-genres, such as heavy metal, death metal, and thrash metal.</li>
+                <li><span>Soul</span> — A genre that combines rhythm and blues and gospel, emphasizing emotionality and expressiveness in vocals. Themes often relate to love and life experiences.</li>
+                <li><span>Classical</span> — A refined genre encompassing music written in the Western tradition, including various eras such as Baroque, Romantic, and contemporary classical music.</li>
+                <li><span>Punk</span> — A genre that emerged in the 1970s, characterized by fast tempos, simple song structures, and anti-commercial lyrics. It often has a rebellious and protest nature.</li>
+                <li><span>New Age</span> — Music that focuses on meditation and relaxation, often used for background music and creating a calming atmosphere.</li>
+            </ul> 
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Basic Terms</button></a>
+            <a href="Advanced_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Advanced Terms</button></a>
+            <a href="Modern_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Modern Terms</button></a>
+            <a href="music_genres_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Music Genres</button></a>
+            <a href="Mandatory_stuff_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Mandatory Requirements</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>

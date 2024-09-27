@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Musical Terms Dictionary</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('Advanced_terms')">ua</button>
+        <form>
+            <label for="pageSelect">Go to:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Select a page--</option>
+                <option value="Home_en.html">Home Page</option>
+                <option value="Basic_terms_en.html">Basic Terms</option>
+                <option value="Advanced_terms_en.html">Advanced Terms</option>
+                <option value="Modern_terms_en.html">Modern Terms</option>
+                <option value="music_genres_en.html">Music Genres</option>
+                <option value="Mandatory_stuff_en.html">Mandatory Requirements</option>
+            </select>
+        </form>
+        <h1>Advanced Musical Terms</h1>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><span>Allegory</span> — in music, this refers to the application of symbolic or hidden meanings through musical forms, themes, or instruments.</li>
+                <li><span>Alteration</span> — changing the pitch of a note by a half step (or whole step) using sharps or flats.</li>
+                <li><span>Appreggiatura</span> — a system of instructions on finger usage for playing a musical instrument, especially string and keyboard instruments.</li>
+                <li><span>Arpeggio</span> — performing the notes of a chord in sequence rather than simultaneously.</li>
+                <li><span>Cadenza</span> — a concluding turn in a musical piece that creates a sense of resolution; often used at the end of a phrase or work.</li>
+                <li><span>Counterpoint</span> — a technique of combining two or more independent melodies that sound simultaneously.</li>
+                <li><span>Dodecaphony</span> — a compositional technique that uses all 12 tones of the chromatic scale equally, without privileging any of them.</li>
+                <li><span>Glissando</span> — a smooth movement from one note to another that creates a sliding sound.</li>
+                <li><span>Tritone</span> — an interval that spans three whole tones, or 6 semitones; usually considered a "dissonant" or unstable interval.</li>
+                <li><span>Retardation</span> — a musical device where a note that would typically disappear or change is delayed to create a sense of tension.</li>
+                <li><span>Temperament</span> — a system for tuning musical instruments that involves uneven distribution of intervals to achieve harmony in a particular key (the most well-known system is equal temperament).</li>
+                <li><span>Sequence</span> — the repetition of a musical motif or phrase at a different pitch, often within a single work.</li>
+                <li><span>Syncopation</span> — the shifting of emphasis to a weak beat of a measure or pulse, creating the effect of an unexpected rhythmic shift.</li>
+                <li><span>Polyrhythm</span> — the simultaneous use of different rhythmic patterns or meters within a single musical piece.</li>
+                <li><span>Formant</span> — resonant frequencies that determine the timbre of sound and the characteristic quality of a voice or instrument.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Basic Terms</button></a>
+            <a href="Advanced_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Advanced Terms</button></a>
+            <a href="Modern_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Modern Terms</button></a>
+            <a href="music_genres_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Music Genres</button></a>
+            <a href="Mandatory_stuff_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Mandatory Requirements</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>

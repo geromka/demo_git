@@ -1,0 +1,51 @@
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Довідник музичний термінів</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('Mandatory_stuff')">en</button>
+        <form>
+            <label for="pageSelect">Перейти на:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Оберіть сторінку--</option>
+                <option value="Home_ua.html">Домашня сторінка</option>
+                <option value="Basic_terms_ua.html">Базові терміни</option>
+                <option value="Advanced_terms_ua.html">Просунуті терміни</option>
+                <option value="Modern_terms_ua.html">Сучасні терміни</option>
+                <option value="music_genres_ua.html">Жанри музики</option>
+                <option value="Mandatory_stuff_ua.html">обов'язкові вимоги</option>
+            </select>
+        </form>
+        <h1>Сторінка для обов'язкових вимог</h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <button type="button" onclick="Calculate()">Обчислити</button>
+                <label><input type="radio" name="ImgLib" value="0" onchange="ChangeImg(this)">скинути розміри</label>
+                <div><input type="radio" name="ImgLib" value="1" onchange="ChangeImg(this)">1<img src="sus.png" alt="sus" id="1"></div>
+                <div><input type="radio" name="ImgLib" value="2" onchange="ChangeImg(this)">2<img src="sus.png" alt="sus" id="2"></div>
+                <div><input type="radio" name="ImgLib" value="3" onchange="ChangeImg(this)">3<img src="sus.png" alt="sus" id="3"></div>
+                <div><input type="radio" name="ImgLib" value="4" onchange="ChangeImg(this)">4<img src="sus.png" alt="sus" id="4"></div>
+                <div><input type="radio" name="ImgLib" value="5" onchange="ChangeImg(this)">5<img src="sus.png" alt="sus" id="5"></div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_ua.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Базові терміни</button></a>
+            <a href="Advanced_terms_ua.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Просунуті терміни</button></a>
+            <a href="Modern_terms_ua.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Сучісні терміни</button></a>
+            <a href="music_genres_ua.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Жанри музики</button></a>
+            <a href="Mandatory_stuff_ua.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Обов'язкові вимоги</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>

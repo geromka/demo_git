@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Musical Terms Dictionary</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('Basic_terms')">ua</button>
+        <form>
+            <label for="pageSelect">Go to:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Select a page--</option>
+                <option value="Home_en.html">Home Page</option>
+                <option value="Basic_terms_en.html">Basic Terms</option>
+                <option value="Advanced_terms_en.html">Advanced Terms</option>
+                <option value="Modern_terms_en.html">Modern Terms</option>
+                <option value="music_genres_en.html">Music Genres</option>
+                <option value="Mandatory_stuff_en.html">Mandatory Requirements</option>
+            </select>
+        </form>
+        <h1>Basic Musical Terms</h1>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li><span>Note</span> — denotes a sound of a specific pitch, the basic unit of music.</li>
+                <li><span>Melody</span> — a sequence of sounds that creates a musical thought or phrase.</li>
+                <li><span>Rhythm</span> — the organized alternation of sounds and pauses over time.</li>
+                <li><span>Tempo</span> — the speed of performing a musical piece, measured in beats per minute (BPM).</li>
+                <li><span>Measure</span> — a rhythmic unit that defines the number of beats in music.</li>
+                <li><span>Tone</span> — the fundamental pitch of a sound or note.</li>
+                <li><span>Pause</span> — a break or silence between sounds in a musical work.</li>
+                <li><span>Harmony</span> — the combination of different sounds or chords that are played simultaneously.</li>
+                <li><span>Dynamics</span> — the volume of music, from quiet to loud.</li>
+                <li><span>Timbre</span> — the characteristic color or quality of a sound that allows us to distinguish different instruments or voices.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Basic Terms</button></a>
+            <a href="Advanced_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Advanced Terms</button></a>
+            <a href="Modern_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Modern Terms</button></a>
+            <a href="music_genres_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Music Genres</button></a>
+            <a href="Mandatory_stuff_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Mandatory Requirements</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MT.css">
+    <script src="base.js"></script>
+    <title>Musical Terms Dictionary</title>
+</head>
+<body>
+    <header>
+        <button onclick="ChangeLang('Mandatory_stuff')">ua</button>
+        <form>
+            <label for="pageSelect">Go to:</label>
+            <select id="pageSelect" onchange="ChangePage(this)">
+                <option value="">--Select a page--</option>
+                <option value="Home_en.html">Home Page</option>
+                <option value="Basic_terms_en.html">Basic Terms</option>
+                <option value="Advanced_terms_en.html">Advanced Terms</option>
+                <option value="Modern_terms_en.html">Modern Terms</option>
+                <option value="music_genres_en.html">Music Genres</option>
+                <option value="Mandatory_stuff_en.html">Mandatory Requirements</option>
+            </select>
+        </form>
+        <h1>Mandatory Requirements Page</h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <button type="button" onclick="Calculate()">Calculate</button>
+                <label><input type="radio" name="ImgLib" value="0" onchange="ChangeImg(this)">Reset Sizes</label>
+                <div><input type="radio" name="ImgLib" value="1" onchange="ChangeImg(this)">1<img src="sus.png" alt="sus" id="1"></div>
+                <div><input type="radio" name="ImgLib" value="2" onchange="ChangeImg(this)">2<img src="sus.png" alt="sus" id="2"></div>
+                <div><input type="radio" name="ImgLib" value="3" onchange="ChangeImg(this)">3<img src="sus.png" alt="sus" id="3"></div>
+                <div><input type="radio" name="ImgLib" value="4" onchange="ChangeImg(this)">4<img src="sus.png" alt="sus" id="4"></div>
+                <div><input type="radio" name="ImgLib" value="5" onchange="ChangeImg(this)">5<img src="sus.png" alt="sus" id="5"></div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="Basic_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Basic Terms</button></a>
+            <a href="Advanced_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Advanced Terms</button></a>
+            <a href="Modern_terms_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Modern Terms</button></a>
+            <a href="music_genres_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Music Genres</button></a>
+            <a href="Mandatory_stuff_en.html"><button onmouseover="FontToYellow(this)" onmouseout="FontToBlack(this)">Mandatory Requirements</button></a>
+        </nav>
+        <img src="sus.png" alt="sus" onmouseover="ImgExp(this)" onmouseout="ImgCon(this)">
+    </footer>
+    <div id="FooterSpace"></div>
+</body>
+</html>
